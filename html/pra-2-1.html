@@ -12,13 +12,26 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="" />
-    </head>
-    <body>
-        <!-- 样式编写 -->
+
+        <!-- 样式规则编写 -->
         <style>
+            #title {
+                color: aqua;
+            }
+            .classify_1 {
+                color: green;
+            }
+
+            a link{
+                color: blue;
+            }
+            a visited {
+                color: black;
+            }
+
             hr {
-                color: red;
-                background-color: red;
+                color: rgb(0, 225, 255);
+                background-color: rgb(117, 5, 121);
                 height: 10px;
                 width: 50%;
                 text-align: left;
@@ -26,17 +39,27 @@
             ul {
                 list-style-type: square;
             }
+            ul ul {
+                list-style-type: disc;
+            }
+            ul ul ul {
+                list-style-type: circle;
+            }
         </style>
-
-<!-- 主 -->
-        <hr>
-        <script type="test/css">
-        </script>
+    </head>
+    <body>
+        <!-- 主题 -->
+        <p id="title">第六章 样式表基础</p>
+        <hr />
         <ul>
-            <li>1</li>
+            <li class="classify_1">1
+                <ul>
+                    <li>1.1</li>
+                </ul>
+            </li>
             <li>2</li>
             <li>3</li>
         </ul>
-        <hr>
+        <hr />
     </body>
 </html>
